@@ -1,0 +1,148 @@
+/* favicon or favourite icon is the small icon that shows up on the tab head
+This can be created from favicon.cc */
+/* flaticon helps you find icons or gify.com helps find transparent gifs*/
+body {
+  color: #40514e;
+  margin: 0;
+  /*we can find the default values from chrome developer tools */
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  /*This centres everything in the body container which is the parent element of all stuff here
+  If you want to specifically centre certain things only, add this to those specific div containers */
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  /*Two methods to center. One is if it is a block element and you have its width set. Then
+                          you will have to use margin: 0 auto 0 auto 0; to centre it */
+  font-size: 5.625rem;
+  /* 100% font size = 16px = 1em;  562.5%==100px*/
+  /* note that em and % are dynamically sized. So if your body has 2em and h1 has 5em font-size, both will add up
+  and hence you will get a really big unexpected font size. That is where static font-size px comes in.It
+  doesnt matter what parents' size is with px */
+  /* therefore use rem which is the root em which also doesnt depend on parents */
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+.top {
+  background-color: #eaf6f6;
+  position: relative;
+  padding-top: 100px;
+  /*in order to change bottom cloud position relatively, one of its parents should have position
+                                        set to relative otherwise it will be moved relative to body */
+}
+
+.my_image{
+  margin-top: 100px;
+}
+.eng {
+  text-decoration: underline;
+}
+
+.intro-para{
+  line-height: 3;
+  margin: 0 auto 100px auto;
+  width: 20%;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 250px;
+  top: 50px;
+}
+.mountain{
+  width: 40%;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.skills{
+  position: relative;
+  margin-top:100px;
+  margin-bottom:200px;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  width: 5%;
+  height: 5px;
+  border-width: 10px;
+  color: #EAF6F6;
+}
+.skill-row{
+  width: 60%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+.skills-image{
+  width: 25%;
+  float: left; /* this makes the text wrap around the image. VERY IMPORTANT */
+  margin-right: 30px;
+  border-radius: 5% 20% 5% 20%;
+}
+
+.last-image{  /*Use float only when that necessary. Use other stuff for positioning */
+  width: 20%;
+  float: right; /* suppose I want only the heading to wrap around but not the description,
+  add another class to the description and do clear: left; or right as is the case. Checkout
+  Flex box to align more to middle.  */
+  margin-left: 30px;
+}
+.bottom-container{
+  background-color: #66bfbf;
+  padding: 50px 0 75px 0;
+}
+.footer-link{
+  color: #11999E;
+}
+.contact-me{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+a{
+  color:#11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #eaf6f6;
+}
+.btn{
+  background-color: #11CDD4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+.btn:hover{
+  background-color: #30E3CB;
+}
+.copyright{
+  color: #eaf6f6;
+  font-family: 'Montserrat', sans-serif;
+  padding-top:20px;
+}
